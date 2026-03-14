@@ -1,5 +1,5 @@
 nav {
-    display: block;
+    display: flex;
     justify-content: center;
     gap: 10rem;
     margin: 1rem;
@@ -7,7 +7,10 @@ nav {
     margin: 25px;
     padding: 1rem;
 }
-
+nav a {
+    color: #fff;
+    display: block;
+}
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     line-height: 1.6;
