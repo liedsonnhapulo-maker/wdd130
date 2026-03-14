@@ -1,10 +1,11 @@
 nav {
-    display: flex;
+    display: block;
     justify-content: center;
     gap: 10rem;
     margin: 1rem;
     background-color: #307bb3;
-    margin: 10px;
+    margin: 25px;
+    padding: 1rem;
 }
 
 body {
@@ -24,6 +25,10 @@ main{
     color: #307bb3;
     text-align: center;
 }
+h1 {
+    color: #1f09cb;
+    margin-bottom: 0.5rem;
+}
 aside{
     width: 20rem;
     margin: 1rem;
@@ -41,6 +46,10 @@ aside img{
 main img {
     width: 150px;
     height: auto;
+    border: #333 solid 1px;
+    padding: 5px;
+    box-shadow: #333 2px 2px 5px;
+
 }
 p {
     padding: 0px
