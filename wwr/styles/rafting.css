@@ -1,19 +1,15 @@
 :root {
-    --primary-color: #055a5;
-    /*forest gree*/
-    --secondary-color: #f4a261;
-    /*warm sand */
-    --accent1-color: #264653;
-    /* dark slate blue */
-    --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, Sans-Serif;
-}
+    --primary-color: #0b3d2e;
+    /* deep forest green */
+    --secondary-color: #1abc9c;
+    /* turquoise */
+    --accent1-color: #f4f1de;
+    /* light sand */
+    --accent2-color: #e07a5f;
+    /* warm orange */
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -25,19 +21,22 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 header,
 main,
 footer {
     width: 840px;
-    margin: 0;
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 nav,
@@ -46,6 +45,18 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .socialmedia a {
@@ -62,23 +73,30 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    padding: 16px;
+    opacity: 0.8;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(244, 241, 222, 0.9);
+    color: var(--primary-color);
+    padding: 12px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
-}
-
-.hero article {
-    margin: 0;
-    padding: 0;
+    margin-left: 10px;
+    border-radius: 8px;
 }
