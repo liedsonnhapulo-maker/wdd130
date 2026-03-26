@@ -5,38 +5,44 @@
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-    margin: 1rem;
-    background-color: #307bb3;
-    margin: 25px;
-    padding: 1rem;
-}
-
-nav a {
-    color: #fff;
-    display: block;
-    padding: 0.5rem 1rem;
-}
-
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #4172da;
-    text-align: center;
+}
+
+nav {
+    background-color: rgb(8, 70, 121);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 main {
     max-width: 840px;
-    margin: 1rem;
+    margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #000;
-    text-align: center;
+    grid-column: 2/3;
 }
 
 h1 {
@@ -44,9 +50,17 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
 aside {
-    width: 20em;
-    text-align: center;
+    width: 20rem;
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -55,7 +69,7 @@ aside img {
 }
 
 aside h2 {
-    position: inherit;
+    position: absolute;
     top: 47px;
     left: 150px;
 }
@@ -63,27 +77,24 @@ aside h2 {
 main img {
     width: 150px;
     height: auto;
-    border: #333 solid 1px;
+    border: 1px solid #333;
     padding: 5px;
-    box-shadow: #333 2px 2px 5px;
+    box-shadow: 2px 2px 5px #333;
     float: right;
-
 }
 
 p {
-    padding: 0px
+    padding: 0;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
 }
 
-/* class selectors*/
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
@@ -91,6 +102,6 @@ footer {
 
 ul {
     color: #fff;
-    display: block;
     padding: 0.5rem 1rem;
+    list-style: none;
 }
