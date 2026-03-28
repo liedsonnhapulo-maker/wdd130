@@ -33,13 +33,14 @@ footer {
     color: var(--primary-color);
 }
 
+/* Cabeçalhos */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
+/* Parágrafos, seções e navegação */
 p,
 section,
 article {
@@ -47,10 +48,14 @@ article {
     padding: 8px;
 }
 
+/* Navegação principal */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    /* consolidado */
+    gap: 2rem;
+    /* substitui margin-left em li */
 }
 
 nav a {
@@ -63,6 +68,7 @@ nav a {
     text-decoration: none;
 }
 
+/* Hero section */
 .hero {
     position: relative;
 }
@@ -101,6 +107,7 @@ nav a {
     border-radius: 8px;
 }
 
+/* Header container */
 .header-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -109,16 +116,7 @@ nav a {
     background-color: #f4f4f4;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 2rem;
-}
-
+/* History section */
 #History {
     padding: 2rem;
     display: grid;
@@ -132,6 +130,7 @@ nav ul li {
     border-radius: 10px;
 }
 
+/* Adventures */
 .adventures-container {
     display: flex;
     justify-content: space-between;
@@ -148,6 +147,7 @@ nav ul li {
     border-radius: 8px;
 }
 
+/* Footer */
 .footer-container {
     display: flex;
     justify-content: flex-end;
