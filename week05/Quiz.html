@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz form</title>
+    <link rel="stylesheet" href="styles/Quiz.css">
+</head>
+
+<body>
+    <main class="box">
+        <h1>✅ Basic Capital Quiz</h1>
+        <form class="box">
+            <div class="quiz-item" box>
+                <label for="q1">What is the capital of France?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div class="quiz-item" box>
+                <label for="q2">What is the capital of Germany?</label>
+                <select id="q2" name="q2" required>
+                    <option value="" selected disabled>Choose a capital</option>
+                    <option value="berlin">Berlin</option>
+                    <option value="munich">Munich</option>
+                    <option value="frankfurt">Frankfurt</option>
+                    <option value="madrid">Madrid</option>
+                </select>
+            </div>
+            <div class="quiz-item" box>
+                <label for="q3">What is the capital of Italy?</label>
+                <input type="text" id="q3" name="q3" required>
+            </div>
+            <div class="quiz-item" box>
+                <label for="q4">What is the capital of Spain?</label>
+                <code class="box">The capital of Spain is...</code>
+                <input type="text" id="q4" name="q4" required>
+            </div>
+            <button type="submit" class="box">Submit Quiz for grading</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
