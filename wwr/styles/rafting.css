@@ -1,12 +1,8 @@
 :root {
-    --primary-color: #0b3d2e;
-    /* deep forest green */
-    --secondary-color: #1abc9c;
-    /* turquoise */
-    --accent1-color: #f4f1de;
-    /* light sand */
-    --accent2-color: #e07a5f;
-    /* warm orange */
+    --primary-color: #e0f7fa;
+    --secondary-color: #00bcd4;
+    --accent1-color: #004d40;
+    --accent2-color: #b2ebf2;
 
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -30,17 +26,15 @@ footer {
     width: 840px;
     margin: 0 auto;
     background-color: var(--accent2-color);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
-/* Cabeçalhos */
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
-/* Parágrafos, seções e navegação */
 p,
 section,
 article {
@@ -48,19 +42,16 @@ article {
     padding: 8px;
 }
 
-/* Navegação principal */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    /* consolidado */
     gap: 2rem;
-    /* substitui margin-left em li */
 }
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--accent1-color);
     font-weight: bold;
 }
 
@@ -68,7 +59,6 @@ nav a {
     text-decoration: none;
 }
 
-/* Hero section */
 .hero {
     position: relative;
 }
@@ -95,8 +85,8 @@ nav a {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(244, 241, 222, 0.9);
-    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--accent1-color);
     padding: 12px;
 }
 
@@ -107,16 +97,14 @@ nav a {
     border-radius: 8px;
 }
 
-/* Header container */
 .header-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
-/* History section */
 #History {
     padding: 2rem;
     display: grid;
@@ -130,7 +118,6 @@ nav a {
     border-radius: 10px;
 }
 
-/* Adventures */
 .adventures-container {
     display: flex;
     justify-content: space-between;
@@ -147,16 +134,80 @@ nav a {
     border-radius: 8px;
 }
 
-/* Footer */
 .footer-container {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
     padding: 1rem 2rem;
-    background-color: #084679;
+    background-color: var(--secondary-color);
 }
 
 .footer-container img {
     width: 40px;
     height: 40px;
+}
+
+.contact-info,
+.map,
+.team,
+.contact-form {
+    margin: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 10px;
+}
+
+/* Layout dos funcionários */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employee {
+    text-align: center;
+    margin: 10px;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Manager no topo */
+.manager {
+    margin-bottom: 20px;
+}
+
+/* Dois funcionários abaixo */
+.staff-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+}
+
+button:hover {
+    background: var(--accent1-color);
 }
